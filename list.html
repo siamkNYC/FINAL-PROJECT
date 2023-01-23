@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="list.css" />
+    <script src="list.js"></script>
+</head>
+<body onload = "initialize();">
+    <header>
+    <h1 id="title">Grocery List</h1>
+    <h2>
+
+        <video width="320" autoplay muted controls>
+            <source src="images/commercial.mp4" type="video/mp4"> 
+          Your browser does not support the video tag.
+        </video> 
+    </h2>
+    </header>
+    <label>
+        <input type = "text" id = "listsel" />
+    </label>
+    <button onclick="addNewItem();">Add Item</button>
+    <br />
+    <form>
+        <input type="number" id="listform" min="1">
+    </form>
+    <button onclick="deleteItem();">Delete Item</button>
+    <br /> 
+
+    <button onclick="moveUp();">▲</button>
+    <label>
+        <input type="number" id="listmove" min="1">
+    </label>
+    <button onclick="moveDown();">▼</button>
+
+    <br />
+    <div id = "listbox"></div>
+</body>
+</html>

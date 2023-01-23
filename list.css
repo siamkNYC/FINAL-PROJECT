@@ -1,0 +1,52 @@
+body
+{
+    background-image: url("images/logo.png");
+    background-repeat: no-repeat;
+    background-color: peachpuff;
+    background-size: 200px;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+
+header 
+    {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    }
+  
+  header > h1 
+  {
+    text-decoration: underline double;
+    font-size: 50pt;
+    grid-column: 1;
+  }
+
+  header > h2 
+  {
+    grid-column: 5;
+  }
+
+hr
+{
+    width: 80%;
+    margin: 20px auto;
+}
+
+form
+{
+    display: inline;
+}
+
+input, button
+{
+    font: 16pt calibri;
+}
+
+div
+{
+    border:thick double teal;
+    border-left: thin;
+    border-right: thin;
+    font-size: xx-large;
+}
